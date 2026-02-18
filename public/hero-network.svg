@@ -1,0 +1,34 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="30" y1="20" x2="890" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6F7F3"/>
+      <stop offset="1" stop-color="#FFF4EA"/>
+    </linearGradient>
+    <linearGradient id="node" x1="180" y1="180" x2="700" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1AA39A"/>
+      <stop offset="1" stop-color="#FF6D00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="700" rx="28" fill="url(#bg3)"/>
+
+  <g stroke="#2E1E14" stroke-opacity="0.18" stroke-width="3">
+    <path d="M190 175L360 270L512 182L706 262"/>
+    <path d="M190 175L232 436L410 526L706 262"/>
+    <path d="M232 436L512 182L662 456L410 526"/>
+    <path d="M232 436L706 262"/>
+    <path d="M360 270L662 456"/>
+    <path d="M190 175L410 526"/>
+  </g>
+
+  <circle cx="190" cy="175" r="34" fill="url(#node)"/>
+  <circle cx="360" cy="270" r="30" fill="#1AA39A" fill-opacity="0.85"/>
+  <circle cx="512" cy="182" r="30" fill="#FF8A2A"/>
+  <circle cx="706" cy="262" r="38" fill="url(#node)"/>
+  <circle cx="232" cy="436" r="40" fill="#1AA39A"/>
+  <circle cx="410" cy="526" r="36" fill="#FF6D00"/>
+  <circle cx="662" cy="456" r="34" fill="#D99C67"/>
+
+  <rect x="282" y="592" width="338" height="62" rx="18" fill="#FFFFFF" fill-opacity="0.82"/>
+  <text x="451" y="632" text-anchor="middle" fill="#2E1E14" font-size="30" font-family="Arial, sans-serif" font-weight="700">Automated Systems</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6E9"/>
+      <stop offset="1" stop-color="#DFF3EF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="220" y1="110" x2="1180" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6D00"/>
+      <stop offset="1" stop-color="#1AA39A"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1400" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
+
+  <g opacity="0.3" filter="url(#blur)">
+    <circle cx="300" cy="210" r="140" fill="#FF6D00"/>
+    <circle cx="1080" cy="240" r="170" fill="#1AA39A"/>
+    <circle cx="760" cy="670" r="190" fill="#C98A55"/>
+  </g>
+
+  <ellipse cx="700" cy="450" rx="430" ry="220" stroke="url(#line)" stroke-width="4"/>
+  <ellipse cx="700" cy="450" rx="300" ry="150" stroke="#2E1E14" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="10 14"/>
+
+  <path d="M370 580C500 370 870 300 1030 480" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 280C610 500 850 520 980 360" stroke="#2E1E14" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="420" cy="565" r="14" fill="#FF6D00"/>
+  <circle cx="706" cy="444" r="18" fill="#1AA39A"/>
+  <circle cx="1028" cy="478" r="14" fill="#FF6D00"/>
+
+  <rect x="535" y="388" width="330" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.85"/>
+  <text x="700" y="443" text-anchor="middle" fill="#2E1E14" font-size="38" font-family="Arial, sans-serif" font-weight="700">Creator Engine</text>
+  <text x="700" y="478" text-anchor="middle" fill="#6A5A52" font-size="24" font-family="Arial, sans-serif">Scale products with speed</text>
+</svg>
