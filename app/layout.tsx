@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   title: "Zapi.One | Creator-First SaaS",
   description:
     "Zapi.One is a Brisbane-based software company building high-performance tools for creators, including PixelMingo.",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/zapi-favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
