@@ -15,9 +15,10 @@ const body = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Zapi.One | Creator-First SaaS",
+  metadataBase: new URL("https://zapi.one"),
+  title: "Zapi.One | Games & Creator Software Studio",
   description:
-    "Zapi.One is a Brisbane-based software company building high-performance tools for creators, including PixelMingo.",
+    "Zapi.One is a Brisbane-based interactive studio building original games like EvoLeap and creator-first software like PixelMingo.",
   icons: {
     icon: [
       { url: "/icon.png", type: "image/png" },

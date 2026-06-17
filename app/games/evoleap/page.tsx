@@ -3,9 +3,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Dna, Hand, Globe2, ShieldCheck, Infinity as InfinityIcon, Sparkles } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { SiteHeader } from "@/components/site/site-header";
+import { SiteFooter } from "@/components/site/site-footer";
 
 export const metadata: Metadata = {
   title: "EvoLeap — Trench to Stars | Zapi.One",
@@ -49,20 +50,34 @@ function Phone({ src, label, className = "" }: { src: string; label: string; cla
 
 export default function EvoLeapPage() {
   return (
-    <main className="bg-background text-foreground">
+    <>
+      <SiteHeader />
+      <main className="bg-background text-foreground">
       {/* Dark game hero */}
       <section className="relative overflow-hidden bg-[#05060f] text-white">
+        <Image
+          src="/games/evoleap/keyart.png"
+          alt=""
+          fill
+          aria-hidden
+          priority
+          className="object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05060f]/80 via-[#05060f]/85 to-[#05060f]" />
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -left-40 top-[-10%] h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle,_rgba(63,224,208,0.22),_transparent_65%)]" />
           <div className="absolute -right-40 bottom-[-30%] h-[620px] w-[620px] rounded-full bg-[radial-gradient(circle,_rgba(155,92,255,0.22),_transparent_65%)]" />
         </div>
         <div className="container relative">
-          <nav className="flex items-center justify-between py-6 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+          <nav className="flex items-center gap-2 pt-8 text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
             <Link href="/" className="hover:text-white">Zapi.One</Link>
+            <span className="text-white/20">/</span>
             <Link href="/games" className="hover:text-white">Games</Link>
+            <span className="text-white/20">/</span>
+            <span className="text-white">EvoLeap</span>
           </nav>
 
-          <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 pb-16 pt-6 lg:flex-row lg:justify-between">
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 pb-16 pt-8 lg:flex-row lg:justify-between">
             <div className="max-w-xl text-center lg:text-left">
               <div className="mx-auto mb-6 flex items-center justify-center gap-4 lg:mx-0 lg:justify-start">
                 <Image src="/games/evoleap/icon.png" width={72} height={72} alt="EvoLeap icon"
@@ -152,11 +167,9 @@ export default function EvoLeapPage() {
             </CardContent>
           </Card>
         </div>
-        <p className="mt-12 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} ZAPI PTY LTD ·{" "}
-          <Link href="/games" className="underline">More games</Link>
-        </p>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
