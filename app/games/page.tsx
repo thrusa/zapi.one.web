@@ -17,6 +17,13 @@ const games = [
     blurb: "A one-finger evolution climber — from a single cell in the Mariana Trench to the stars.",
     icon: "/games/evoleap/icon.png",
   },
+  {
+    slug: "clearspace",
+    name: "Clearspace",
+    tagline: "Calm Block Puzzle",
+    blurb: "Create space. Clear your mind. A premium, calm block puzzle for short, satisfying mental resets.",
+    icon: "/games/clearspace/icon.png",
+  },
 ];
 
 export default function GamesPage() {
