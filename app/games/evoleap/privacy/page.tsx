@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { SiteHeader } from "@/components/site/site-header";
+import { SiteFooter } from "@/components/site/site-footer";
+
 export const metadata: Metadata = {
   title: "EvoLeap — Privacy Policy | Zapi.One",
   description: "EvoLeap collects no personal data and contains no ads.",
@@ -8,7 +11,9 @@ export const metadata: Metadata = {
 
 export default function EvoLeapPrivacyPage() {
   return (
-    <main className="bg-background text-foreground">
+    <>
+      <SiteHeader />
+      <main className="bg-background text-foreground">
       <div className="container py-14">
         <div className="mx-auto max-w-3xl space-y-6">
           <div className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
@@ -53,6 +58,8 @@ export default function EvoLeapPrivacyPage() {
           </Link>
         </div>
       </div>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
