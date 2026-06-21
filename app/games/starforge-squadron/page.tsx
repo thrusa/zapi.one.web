@@ -33,6 +33,15 @@ const ships = [
   { name: "Ghostfin", role: "Scout · Discovery specialist", ability: "Scanner Pulse", effect: "Reveal hidden branches, rare nodes, weak points, and relics." },
 ];
 
+const shots = [
+  { src: "/games/starforge-squadron/shot-station.png", label: "Your home station — launch, trade, research, and command the fleet" },
+  { src: "/games/starforge-squadron/shot-launch.png", label: "Plan every run — weigh routes, contracts, and risk before you launch" },
+  { src: "/games/starforge-squadron/shot-combat.png", label: "Fly, fight, and mine through living asteroid fields" },
+  { src: "/games/starforge-squadron/shot-starmap.png", label: "Chart the frontier — scan zones, find hidden signals, set waypoints" },
+  { src: "/games/starforge-squadron/shot-hangar.png", label: "Rebuild your squadron — upgrade hulls, modules, and abilities" },
+  { src: "/games/starforge-squadron/shot-market.png", label: "Sell your haul through dynamic, shifting markets" },
+];
+
 const worlds = [
   { name: "Asteroid Frontier", theme: "Dusty mining belt, frontier salvage, pirate drones, and old squadron wreckage.", color: "#F6B94A" },
   { name: "Cryo Nebula", theme: "Frozen moon system, ice wrecks, shield tech, and cryo creatures.", color: "#9FEAFF" },
@@ -199,6 +208,35 @@ export default function StarforgeSquadronPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Screenshots */}
+        <section className="bg-[#02050A] py-16 text-white sm:py-20">
+          <div className="container">
+            <div className="mx-auto max-w-6xl">
+              <p className="text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#2BD9FF]">Inside the cockpit</p>
+              <h2 className="mt-3 text-center font-[var(--font-heading)] text-2xl font-bold tracking-tight sm:text-3xl">
+                Every run, end to end
+              </h2>
+              <p className="mx-auto mt-3 max-w-xl text-center text-sm text-slate-400">
+                From the home station to the asteroid belt and back — real screens from the game in development.
+              </p>
+              <div className="mt-10 grid gap-6 sm:grid-cols-2">
+                {shots.map((s) => (
+                  <figure key={s.src} className="card-hover overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
+                    <Image
+                      src={s.src}
+                      width={1800}
+                      height={828}
+                      alt={s.label}
+                      className="h-auto w-full"
+                    />
+                    <figcaption className="px-5 py-4 text-sm text-slate-300">{s.label}</figcaption>
+                  </figure>
+                ))}
+              </div>
             </div>
           </div>
         </section>
