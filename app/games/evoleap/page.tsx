@@ -92,9 +92,14 @@ export default function EvoLeapPage() {
                 to the stars in a one-finger evolution climber.
               </p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-                <span className="inline-flex items-center rounded-full bg-[#3FE0D0] px-5 py-2 text-sm font-bold text-[#06121F]">
-                  Coming soon to the App Store
-                </span>
+                <a
+                  href="https://apps.apple.com/us/app/evoleap/id6780233156"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-full bg-[#3FE0D0] px-5 py-2 text-sm font-bold text-[#06121F] transition hover:opacity-90"
+                >
+                  Download on the App Store
+                </a>
                 <span className="inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-300">
                   No ads, ever
                 </span>

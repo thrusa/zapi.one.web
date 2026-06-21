@@ -14,6 +14,7 @@ export type Game = {
   genre: string;
   accent: string; // hex used for per-game glow accents
   href?: string; // detail route; defaults to /games/<slug>
+  appStore?: string; // App Store listing URL (set once the game is released)
 };
 
 export const games: Game[] = [
@@ -34,10 +35,11 @@ export const games: Game[] = [
       "/games/evoleap/shot-5.webp",
       "/games/evoleap/shot-6.webp",
     ],
-    status: "coming-soon",
+    status: "released",
     platform: "iOS",
     genre: "Arcade · Evolution Climber",
     accent: "#3FE0D0",
+    appStore: "https://apps.apple.com/us/app/evoleap/id6780233156",
   },
   {
     slug: "starforge-squadron",

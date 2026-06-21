@@ -87,6 +87,16 @@ export function FeaturedHero({ items }: { items: Game[] }) {
               Discover {g.name}
               <ArrowRight className="ml-2 size-4" />
             </Link>
+            {g.appStore && (
+              <a
+                href={g.appStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-md border border-white/15 px-4 py-2.5 text-sm font-semibold text-foreground transition hover:bg-white/5"
+              >
+                Download on the App Store
+              </a>
+            )}
             <span className="inline-flex items-center rounded-md border border-white/10 px-3 py-2 text-xs font-medium text-muted-foreground">
               {g.genre}
             </span>
