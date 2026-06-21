@@ -81,6 +81,28 @@ export const games: Game[] = [
     genre: "Calm Block Puzzle",
     accent: "#3AAFA9",
   },
+  {
+    slug: "brainatlas",
+    name: "Brain Atlas",
+    tagline: "A daily knowledge adventure",
+    blurb: "A premium general-knowledge quiz-adventure for curious minds aged 7 to adult — learn, don't just memorise.",
+    longBlurb:
+      "Brain Atlas turns general knowledge into a daily adventure. Answer beautifully illustrated quizzes across geography, science, history, space, nature, maths, logic and culture — then tap “Tell Me More” to actually learn why, with real explanations, techniques and facts. A fresh Daily Challenge every day, an adventure map of 360 levels that adapts to your skill, streaks, quests, a season pass, and a collection to build. Thousands of questions so it stays fresh. Designed to help kids (and grown-ups) genuinely learn.",
+    icon: "/games/brainatlas/icon.png",
+    cover: "/games/brainatlas/keyart.jpg",
+    shots: [
+      "/games/brainatlas/01_home.png",
+      "/games/brainatlas/02_quiz.png",
+      "/games/brainatlas/04_learn.png",
+      "/games/brainatlas/03_result.png",
+      "/games/brainatlas/05_map.png",
+      "/games/brainatlas/06_season.png",
+    ],
+    status: "coming-soon",
+    platform: "iOS",
+    genre: "Educational · Quiz Adventure",
+    accent: "#F6B94A",
+  },
 ];
 
 export const statusLabel: Record<GameStatus, string> = {
